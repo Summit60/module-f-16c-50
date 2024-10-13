@@ -61,6 +61,10 @@ defineIndicatorLight("AFC_STB_LGHT",	246, "AFCS", "LIGHT_AFCS_STABAUTO")
 
 --MCP LAMPS
 defineIndicatorLight("MST_CAUTION", 	313, "MCP", "LIGHT_MCP_MC")
+defineIndicatorLight("MST_LOWROTORRPM", 	314, "MCP", "LIGHT_MCP_LOWROTORRPM")
+defineIndicatorLight("MST_FIRE", 	315, "MCP", "LIGHT_MCP_FIRE")
+defineIndicatorLight("MST_1ENGOUT", 	316, "MCP", "LIGHT_MCP_1ENGOUT")
+defineIndicatorLight("MST_2ENGOUT", 	317, "MCP", "LIGHT_MCP_2ENGOUT")
 
 --MISC PANEL LIGHTS
 defineIndicatorLight("WHL_LCK_LGT", 	294, "Misc", "TAIL_WHEEL_LOCK")
@@ -128,7 +132,8 @@ definePushButton("PDU1_TST",		25, 3231, 302, "Vids", "PDU Test Pilot")
 --definePushButton("PDU2_TST",		25, 3232, "Vids", "PDU Test CoPilot")
 
 defineTumb("CAP_TST",				24, 3219, 304,  1, {-1, 0}, nil, false, "Caution Display Panel", "CAP Lamp TEST")
-defineToggleSwitch("CAP_BRGT",		24, 3220, 304, 							"Caution Display Panel", "CAP Lamp BRIGHTNESS")
+--defineToggleSwitch("CAP_BRGT",		24, 3220, 304, 							"Caution Display Panel", "CAP Lamp BRIGHTNESS")
+definePotentiometer("CAP_BRGT",		24, 3220, 304, nil, "Caution Display Panel", "Caution Display Panel Brightness Knob - Rotate to adjust brightness")
 definePushButton("MST_CAUT_RST",	24, 3221, 305, 							"Caution Display Panel", "Master Caution Reset")
 
 -- -- AN/ASN-128B
